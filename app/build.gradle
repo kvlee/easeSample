@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+def appVersionCode = 1
+def appVersionName = "1.0"
+def appApplicationId = "cn.lee.ease.sample"
+
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    //
+    defaultConfig {
+        applicationId appApplicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode appVersionCode
+        versionName appVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    lintOptions {
+        abortOnError false
+    }
+    //
+    signingConfigs {
+        debug {
+            // 下面各值的意思将在后续进行讲解
+            storeFile file('sharklee.jks')
+            storePassword "060510113"
+            keyAlias "sharklee"
+            keyPassword "060510113"
+        }
+
+        release {
+            // 下面各值的意思将在后续进行讲解
+            storeFile file('sharklee.jks')
+            storePassword "060510113"
+            keyAlias "sharklee"
+            keyPassword "060510113"
+        }
+    }
+
+    packagingOptions{
+        exclude'META-INF/DEPENDENCIES.txt'
+        exclude'META-INF/LICENSE.txt'
+        exclude'META-INF/NOTICE.txt'
+        exclude'META-INF/NOTICE'
+        exclude'META-INF/LICENSE'
+        exclude'META-INF/DEPENDENCIES'
+        exclude'META-INF/notice.txt'
+        exclude'META-INF/license.txt'
+        exclude'META-INF/dependencies.txt'
+        exclude'META-INF/LGPL2.1'
+    }
+}
+
+dependencies {
+    //android
+    compile rootProject.ext.dependencies.support_v7
+}

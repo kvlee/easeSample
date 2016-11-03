@@ -1,0 +1,93 @@
+ext {
+
+    dependencies = [
+            //test
+            "junit"                  : "junit:junit:4.12",
+            //android support
+            "support_v7"             : "com.android.support:appcompat-v7:24.2.1",
+            "support_design"         : "com.android.support:design:24.2.1",
+            "support_v4"             : 'com.android.support:support-v4:24.2.1',
+            "support_annotation"     : "com.android.support:support-annotations:24.2.1",
+            "recyclerview"           : "com.android.support:recyclerview-v7:24.2.1",
+
+            //multiDexEnabled
+            "support_multidex"       : "com.android.support:multidex:1.0.1",
+
+            //fragmentation
+            "fragmentation"          : "me.yokeyword:fragmentation:0.7.9",
+            "fragmentation_swipeback": "me.yokeyword:fragmentation-swipeback:0.7.9",
+
+            //glide
+            "glide"                  : "com.github.bumptech.glide:glide:3.7.0",
+
+            //base adapter
+//            "base_adapter"           : "com.zhy:base-adapter:3.0.3",
+//            "base_rvadapter"         : "com.zhy:base-rvadapter:3.0.3",
+
+            //otto
+            "otto"                   : "com.squareup:otto:1.3.8",
+
+            //retrofit
+            "retrofit"               : "com.squareup.retrofit2:retrofit:2.0.2",
+            "convertergson"          : "com.squareup.retrofit2:converter-gson:2.0.2",
+            "adapterrxjava"          : "com.squareup.retrofit2:adapter-rxjava:2.0.2",
+            "converterscalars"       : "com.squareup.retrofit2:converter-scalars:2.1.0",
+
+            //gson
+            "gson"                   : "com.google.code.gson:gson:2.7",
+
+            //rx
+            "rxjava"                 : "io.reactivex:rxjava:1.2.0",
+            "rxandroid"              : "io.reactivex:rxandroid:1.2.1",
+
+            //log
+            "klog"                   : "com.github.zhaokaiqiang.klog:library:1.5.0",
+
+            //okhttp
+            "interceptor"            : "com.squareup.okhttp3:logging-interceptor:3.4.1",
+
+            //image -piker
+            "imagepicker"            : "com.lzy.widget:imagepicker:0.3.2",
+            "super_dialog"           : "com.mylhyl:superDialog:1.0.2",
+            "material_dialog"        : "com.afollestad.material-dialogs:core:0.9.0.2",
+            "material_dialog_common" : "com.afollestad.material-dialogs:commons:0.9.0.2",
+            //status bar
+            "statusbaruitl"          : "com.jaeger.statusbaruitl:library:1.2.5",
+            //banner lib
+            "bga_banner"             : "cn.bingoogolapple:bga-banner:2.0.9@aar",
+            "bga_banner_lib"         : "com.nineoldandroids:library:2.4.0",
+            //searchview
+            "searchview"             : "com.miguelcatalan:materialsearchview:1.4.0",
+
+            //下拉刷新上拉加载
+            "nineoldandroids"        : "com.nineoldandroids:library:2.4.0",
+            "refreshlayout"          : "cn.bingoogolapple:bga-refreshlayout:1.0.5@aar",
+            //
+            "baseadapter"            : "com.classic.adapter:commonadapter:1.2",
+            //usercenter
+            "usercenterwithui"       : "cn.sky.ucenter.ui:usercenterui:2.0.0",
+            "usercenter"             : "cn.sky.ucenter.service:usercenter:2.0.0",
+            //
+            "sky_utils"              : "cn.ninesky.utils:utils:2.0.0",
+            "sky_baseview"           : "cn.ninesky.baseview:baseview:2.0.0",
+            //购物车数据加减控件
+            "ammountview"            : "cn.sky.ammountview:ammountview:2.0.0",
+            //自适应item布局
+            "flowlayout"             : "com.zhy:flowlayout-lib:1.0.3",
+            "butterknife"            : "com.jakewharton:butterknife:8.4.0",
+            "butterknife_compiler"   : "com.jakewharton:butterknife-compiler:8.4.0",
+
+    ]
+
+    android = [
+            compileSdkVersion: 24,
+            buildToolsVersion: "24.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 23
+    ]
+
+    version = [
+            appVersionCode = 1,
+            appVersionName = "1.0"
+    ]
+}
